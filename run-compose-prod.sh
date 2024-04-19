@@ -9,10 +9,10 @@ export POSTGRES_DB=pokemon_jwt_db
 export POSTGRES_USER=postgres
 export POSTGRES_PASSWORD=postgres
 export DOMAIN='pokemonko.com'
-export AWS_SES_REGION_NAME=$1
-export AWS_ACCESS_KEY_ID=$2
-export AWS_SECRET_ACCESS_KEY=$3
-export NEW_VERSION=$4
+export AWS_SES_REGION_NAME=$AWS_SES_REGION_NAME
+export AWS_ACCESS_KEY_ID=$AWS_SECRET_ACCESS_KEY
+export AWS_SECRET_ACCESS_KEY=$AWS_SECRET_ACCESS_KEY
+export NEW_VERSION=$NEW_VERSION
 
 
 docker-compose -f docker-compose.prod.yml build --no-cache
