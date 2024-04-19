@@ -35,7 +35,7 @@ DEBUG = getenv("DEBUG", "False") == "True"
 
 
 ALLOWED_HOSTS = getenv('DJANGO_ALLOWED_HOSTS',
-                       '127.0.0.1,localhost').split(',')
+                       '127.0.0.1,localhost,pokemonko.com').split(',')
 
 
 REST_FRAMEWORK = {
@@ -76,7 +76,7 @@ MIDDLEWARE = [
 
 CORS_ALLOWED_ORIGINS = getenv(
     'CORS_ALLOWED_ORIGINS',
-    'http://localhost:5173,http://127.0.0.1:5173,http://pokemonko.com'
+    'http://localhost:5173,http://127.0.0.1:5173,http://pokemonko.com:80'
 ).split(',')
 CORS_ALLOW_CREDENTIALS = True
 
